@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkinCare App</title>
+    <link rel="stylesheet" href="skin.css">
+</head>
+<body>
+    <div class="skincare-main">
+      <!--Header-->
+       <header>
+        <div class="container">
+            <nav>
+             <div class="search-bar">
+                <form action="/search" method="get">
+                <input type="text" name="query" placeholder="Search...">
+                <button type="submit">Search</button>
+                </form>
+             </div>
+             <!--toogle bar-->
+             <div class="toogle-bar">
+                <span></span>
+                <span></span>
+                <span></span>
+             </div>
+             <div class="navigation-bar">
+                <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Products</a></li>
+                 <div class="logo">
+                    <a href="#"><img src="Gold Luxury Initial Circle Logo.png" alt="logo"></a>
+                 </div>
+                 <li><a href="#">Skin Analysis</a></li>
+                   <!-- <ul class="skin-dropdown">
+                        <li><a href="#">Routine Builder</a></li>
+                        <li><a href="#">Take a quiz to know your skin type</a></li>
+                        <li><a href="#">Skin Concerns</a></li>
+                        <li><a href="#">Skin Goals</a></li>
+                    </ul> -->
+                 <li><a href="#">Blogs/Articles</a></li>
+                 <li class="login-btn"><a href="#">Login/Sign Up</a></li>
+                </ul>
+
+             </div>
+            </nav>
+
+        </div>
+       </header>
+    <!--Skin care image and explore button-->
+       <div class="picture-container">
+        <img src="1.png" alt="Display image" id="picture">
+        <a href="#" class="btn-main">
+            Explore
+          </a>
+       </div>
+   
+    </div>
+</body>
+<script src="index.js"></script>
+<script>
+    $('.toggle-bar').on('click', function (event) {
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('200');
+    })
+</script>
+</html>

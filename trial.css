@@ -1,0 +1,73 @@
+/* Style the dropdown menu */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #a55050;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown li {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Style the dropdown on hover */
+li:hover .dropdown {
+    display: block;
+}
+
+/* Style the navigation bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(144, 11, 11);
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+#picture-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-top: 250px;
+}
+
+#picture {
+    width: 100%;
+    height: auto;
+}
+
+#explore-button {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#explore-button:hover {
+    background-color: #555;
+}
+
